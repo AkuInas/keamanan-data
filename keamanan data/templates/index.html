@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenere Cipher</title>
+    <style>
+        /* Full-width inputs */
+       
+
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        input[type=file] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .output {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            align-items: center;
+        }
+        
+        /* Add a hover effect for buttons */
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/enkripsi" method="post" enctype="multipart/form-data">
+            <label for="en"><b>Enkripsi</b></label>
+            <br>
+            <p>Input file untuk enkripsi</p>
+            <input type="file" name="en">
+            <br>
+            <p>Input key</p>
+            <input type="text" name="kunci" placeholder="Masukan Key">
+            <button type="submit">Convert</button>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <form action="/dekripsi" method="post" enctype="multipart/form-data">
+            <label for="de"><b>Dekripsi</b></label>
+            <br>
+            <p>Input file untuk dekripsi</p>
+            <input type="file" name="de">
+            <br>
+            <p>Input key</p>
+            <input type="text" name="kunci2" placeholder="Masukan Key">
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+    <python></python>
+</body>
+</html>
